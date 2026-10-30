@@ -1,0 +1,241 @@
+/* 기본 설정 및 폰트 초기화 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 상단 히어로 섹션 (사진이 짤리지 않고 전체가 보이도록 background-size를 contain 또는 적절한 높이로 설정) */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+              url('images/jumping2.jpg') no-repeat center center;
+  background-size: contain; /* 사진이 잘리지 않고 온전하게 다 나오도록 설정 */
+  background-color: #1a1a1a; /* 사진 비율 외의 빈 공간을 채워줄 깔끔한 암색 배경 */
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  box-shadow: inset 0 -10px 20px rgba(0,0,0,0.1);
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.95;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.cta-btn {
+  background-color: white;
+  color: #ff6b6b;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  transition: transform 0.2s, background-color 0.2s;
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  background-color: #fff5f5;
+}
+
+/* 메인 레이아웃 컨테이너 */
+.container {
+  max-width: 850px;
+  margin: -30px auto 40px auto;
+  padding: 0 20px;
+}
+
+/* 공통 카드 디자인 */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 35px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card.bg-light {
+  background: #fff9f5;
+  border: 1px solid #ffe8df;
+}
+
+.card h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.section-desc {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* 이미지 박스 디자인 (잘림 방지) */
+.image-box {
+  width: 100%;
+  background: #eef2f3;
+  border-radius: 12px;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+  border: 2px dashed #d1d8e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-placeholder-text {
+  color: #888;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 40px 0;
+}
+
+/* 특징 그리드 */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.feature-item {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #eaeaea;
+}
+
+.feature-item .icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.feature-item h3 {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* 프로그램 리스트 디자인 */
+.program-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.program-list li {
+  padding: 12px 0;
+  border-bottom: 1px dashed #ffd8cc;
+  font-size: 16px;
+  color: #444;
+}
+
+.program-list li:last-child {
+  border-bottom: none;
+}
+
+/* 오시는 길 영역 */
+.info-box {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px 0 20px 0;
+  font-size: 15px;
+}
+
+.info-box p {
+  margin-bottom: 8px;
+}
+
+.phone-link {
+  color: #ff6b6b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.notice {
+  color: #e67e22;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* 네이버 지도 버튼 스타일 */
+.map-btn-area {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.naver-map-btn {
+  display: inline-block;
+  background-color: #03C75A;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(3, 199, 90, 0.3);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.naver-map-btn:hover {
+  transform: translateY(-2px);
+  background-color: #02b350;
+}
+
+/* 푸터 */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #888;
+  font-size: 14px;
+  background-color: #eaeff2;
+}
