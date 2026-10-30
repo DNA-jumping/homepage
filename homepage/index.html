@@ -8,34 +8,49 @@
 </head>
 <body>
 
-  <!-- 상단 네비게이션 / 헤더 -->
+  <!-- 상단 히어로 섹션 -->
   <header class="hero">
     <div class="hero-content">
-      <h1>🎵 뱃살 쏙! 스트레스 쫙!</h1>
-      <p class="subtitle">화성시 남양 DNA점핑 & 힐링다이어트에서 신나게 다이어트하세요!</p>
+      <span class="badge">🔥 화성시 남양 핫플 다이어트</span>
+      <h1>뱃살 쏙! 스트레스 쫙!</h1>
+      <p class="subtitle">신나는 음악과 함께 트램펄린 위에서 즐기는 다이어트 파티!</p>
       <a href="tel:010-5480-1673" class="cta-btn">1회 무료 체험 예약하기</a>
     </div>
   </header>
 
-  <!-- 메인 소개 섹션 -->
+  <!-- 메인 컨텐츠 영역 -->
   <main class="container">
     
     <!-- 점핑 운동 소개 -->
     <section class="card">
-      <h2>🚀 점핑 운동, 무엇이 좋을까요?</h2>
-      <p>트램펄린 위에서 신나는 음악에 맞춰 뛰는 <strong>전신 유산소 운동</strong>입니다.</p>
+      <div class="card-header-flex">
+        <div>
+          <h2>🚀 점핑 운동, 무엇이 좋을까요?</h2>
+          <p class="section-desc">트램펄린 위에서 신나는 음악에 맞춰 뛰는 최고의 전신 유산소 운동입니다.</p>
+        </div>
+      </div>
+      
+      <!-- 운동 소개 사진 영역 -->
+      <div class="image-box">
+        <img src="images/jumping.jpg" alt="점핑 운동 분위기" onerror="this.style.display='none'">
+        <p class="img-placeholder-text">🎵 활기차고 신나는 점핑 클럽 내부 모습</p>
+      </div>
+
       <div class="features-grid">
         <div class="feature-item">
-          <h3>🔥 높은 칼로리 소모</h3>
-          <p>상·하체 전신 근육을 사용하여 짧은 시간에도 엄청난 칼로리를 태웁니다.</p>
+          <div class="icon">🔥</div>
+          <h3>높은 칼로리 소모</h3>
+          <p>짧은 시간에도 엄청난 칼로리를 태워 체지방을 빠르게 태워줍니다.</p>
         </div>
         <div class="feature-item">
-          <h3>💪 코어 강화 & 체력 향상</h3>
-          <p>균형을 잡으며 운동하기 때문에 코어 근육 강화와 전반적인 체력 증진에 탁월합니다.</p>
+          <div class="icon">💪</div>
+          <h3>코어 & 체력 강화</h3>
+          <p>균형을 잡으며 운동하므로 코어 근육과 전반적인 체력이 쑥쑥 향상됩니다.</p>
         </div>
         <div class="feature-item">
-          <h3>😊 스트레스 해소</h3>
-          <p>지루할 틈 없이 즐겁게 지속할 수 있어 운동이 일상의 활력이 됩니다.</p>
+          <div class="icon">😊</div>
+          <h3>스트레스 제로</h3>
+          <p>지루할 틈 없이 음악을 즐기다 보면 어느새 스트레스가 싹 날아갑니다.</p>
         </div>
       </div>
     </section>
@@ -44,19 +59,28 @@
     <section class="card bg-light">
       <h2>🏆 DNA 점핑 맞춤 프로그램</h2>
       <ul class="program-list">
-        <li>✅ <strong>1:1 맞춤 컨설팅:</strong> 개인별 체형 분석 및 맞춤 운동 제공</li>
-        <li>✅ <strong>단기 집중 다이어트:</strong> 체계적인 체지방 감량 프로그램</li>
-        <li>✅ <strong>식단 & 영양 상담:</strong> 건강하고 요요 없는 유지 관리 지원</li>
-        <li>✅ <strong>힐링 프로그램:</strong> 반신욕 및 원적외선으로 피로 해소</li>
+        <li><span>✅</span> <strong>1:1 맞춤 컨설팅:</strong> 개인별 체형 분석 및 맞춤형 운동 가이드 제공</li>
+        <li><span>✅</span> <strong>단기 집중 다이어트:</strong> 요요 없이 건강하게 체지방을 감량하는 체계적 프로그램</li>
+        <li><span>✅</span> <strong>식단 & 영양 상담:</strong> 혼자 하기 힘든 식단 관리를 친절하고 든든하게 지원</li>
+        <li><span>✅</span> <strong>힐링 프로그램:</strong> 운동 후 반신욕과 원적외선으로 완벽한 피로 해소</li>
       </ul>
     </section>
 
     <!-- 오시는 길 및 안내 -->
     <section class="card contact-card">
       <h2>📍 찾아오시는 길 & 문의</h2>
-      <p><strong>위치:</strong> 경기도 화성시 남양읍 시청로 119, 304호 (화성시청 옆 메가커피 건물 3층)</p>
-      <p><strong>문의 전화:</strong> <a href="tel:010-5480-1673">010-5480-1673</a></p>
-      <p class="notice">💡 모든 체험과 상담은 원활한 진행을 위해 <strong>예약제</strong>로 운영됩니다.</p>
+      <div class="info-box">
+        <p><strong>위치:</strong> 경기도 화성시 남양읍 시청로 119, 304호 (화성시청 옆 메가커피 건물 3층)</p>
+        <p><strong>문의 전화:</strong> <a href="tel:010-5480-1673" class="phone-link">010-5480-1673</a></p>
+        <p class="notice">💡 모든 체험과 상담은 원활한 진행을 위해 <strong>예약제</strong>로 운영됩니다.</p>
+      </div>
+
+      <!-- 네이버 지도 바로가기 버튼 (수정된 링크 적용) -->
+      <div class="map-btn-area">
+        <a href="https://naver.me/qeb8gxz5" target="_blank" class="naver-map-btn">
+          🗺️ 네이버 지도에서 위치·길찾기 보기
+        </a>
+      </div>
     </section>
 
   </main>
