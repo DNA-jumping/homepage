@@ -90,6 +90,14 @@ h1, h2, h3 { font-family: 'Black Han Sans', 'Noto Sans KR', sans-serif; font-wei
 .cta-btn:hover { transform: translateY(3px); box-shadow: 0 3px 0 #c99a00; }
 .cta-btn:active { transform: translateY(6px); box-shadow: 0 0 0 #c99a00; }
 
+.brand {
+  position: relative; z-index: 1;
+  max-width: 720px; margin: 0 auto 44px;
+  font-family: 'Black Han Sans', 'Noto Sans KR', sans-serif;
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
 /* ---------- 본문 공통 ---------- */
 .container { max-width: 880px; margin: 0 auto; padding: 0 20px 60px; }
 .card { padding: 48px 0; }
